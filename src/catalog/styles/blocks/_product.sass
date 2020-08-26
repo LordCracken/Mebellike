@@ -1,0 +1,119 @@
+.catalog
+  &__product
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-142px)
+    margin-bottom: 19px
+    padding-top: 45px
+    width: 284px
+    height: 395px
+    background-color: $alternate-bg
+    box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.22)
+    transition: 0
+    overflow: hidden
+    &:hover
+      height: 550px
+      transition: 0.5s
+.product
+  &__img
+    margin-right: 10px
+    margin-bottom: 32px
+    border-bottom: 1px solid #ededed
+    padding-right: 35px
+    padding-bottom: 43px
+    padding-left: 45px
+  &__text
+    padding-right: 27px
+    padding-left: 24px
+  &__title
+    margin: 0
+    margin-bottom: 20px
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.32px
+  &__stats
+    display: flex
+    justify-content: space-between
+.img
+  &-link
+    max-width: 195px
+.rating
+  display: flex
+  justify-content: space-between
+  margin-bottom: 28px
+  width: 78px
+.icon
+  &-star-full
+    font-size: 14px
+    color: #e1e1e1
+.active-star
+  color: #ffd71f
+.actual-price
+  color: #7dad4b
+  font-size: 16px
+  font-weight: 700
+.old-price
+  font-size: 16px
+  font-weight: 40
+  color: #939393
+  letter-spacing: 0.32px
+  text-decoration: line-through
+.additional
+  padding-top: 0px
+  padding-bottom: 39px
+  left: 0
+  background-color: $alternate-bg
+  z-index: 2
+.buy__counter
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+.btn-cart
+  padding: 10px 22px
+.amount
+  border: 1px solid #e0e0e0
+  padding-top: 10px
+  padding-bottom: 10px
+  width: 59px
+  text-align: center
+  font-size: 14px
+  font-weight: 400
+  &-counter
+    max-width: 145px
+  &-btn
+    border: 1px solid #e0e0e0
+    width: 36px
+    height: 39px
+    text-align: center
+    background-color: #fff
+    font-size: 14px
+    font-weight: 400
+    color: $text-color
+    cursor: pointer
+.btn-buy
+  border: 2px solid #ee8b15
+  padding-top: 15px
+  padding-bottom: 15px
+  width: 100%
+  font-size: 13px
+  font-weight: 700
+  color: #ee8b15
+  letter-spacing: 0.1px
+  background-color: rgba(0, 0, 0, 0)
+  &:hover
+    box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.22)
+@media (max-width: 1240px)
+  .catalog
+    &__product
+      width: 260px
+      height: 370px
+      transform: translateX(-130px)
+    &:hover
+      height: 530px
+  .additional
+    padding-bottom: 19px
+@media (max-width: 992px)
+  .btn-buy
+    &:hover
+      box-shadow: none

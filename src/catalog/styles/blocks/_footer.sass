@@ -1,0 +1,170 @@
+.footer
+  &-info
+    padding-top: 22px
+    padding-bottom: 17px
+    padding-right: 20px
+    padding-left: 20px
+    background-color: $alternate-bg
+    &-block
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__company, &__contacts
+      display: flex
+      align-items: center
+  &__slogan
+    margin-left: 67px
+    max-width: 260px
+    font-size: 14px
+    font-weight: 400  
+    line-height: 19px
+  &__phone
+    &:last-child
+      margin-left: 61px
+.products
+  padding-top: 43px
+  padding-right: 20px
+  padding-bottom: 15px
+  padding-left: 20px
+  background-color: $footer-products
+  color: $footer-text
+  &-block
+    display: flex
+    justify-content: space-around
+  &-list
+    margin: 0
+    padding: 0
+    list-style-type: none
+    &__title
+      position: relative
+      margin-top: 0
+      margin-bottom: 27px
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.33px
+      &::after
+        content: ''
+        position: absolute
+        top: 27px
+        left: 0
+        width: 28px
+        height: 1px
+        background-color: $footer-text
+    &__item
+      font-size: 14px
+      font-weight: 400
+      line-height: 25.05px
+      letter-spacing: 0.35px
+      >.link
+        &:hover
+          color: #aaaaaa
+.service
+  &-info
+    background-color: $service-info
+    padding-right: 20px
+    padding-left: 20px
+    font-size: 14px
+    font-weight: 400
+    color: $footer-text
+    &-block
+      display: flex
+      justify-content: space-between
+      padding-top: 20px
+      padding-bottom: 20px
+  &__site
+    margin-right: 147px
+    >.link
+      &:hover
+        color: #aaaaaa
+@media (max-width: 992px)
+  .footer
+    &-info
+      display: flex
+      justify-content: center
+      padding-right: 15px
+      padding-left: 15px
+      &-block
+        align-items: flex-start
+        flex-direction: column
+        margin: auto
+      &__contacts
+        margin-top: 15px
+    &__slogan
+      margin-left: 50px
+  .products
+    padding-right: 15px
+    padding-left: 15px
+    &-block
+      flex-wrap: wrap
+    &-list
+      &__wrap
+        flex-basis: 33%
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:nth-child(4), &:nth-child(5)
+          margin-top: 45px
+      &__item
+        >.link
+          &:hover
+            color: $footer-text
+  .service
+    &-info
+      padding-right: 15px
+      padding-left: 15px
+    &__site
+      margin-right: 100px
+      >.link
+        &:hover
+          color: $footer-text
+@media (max-width: 768px)
+  .footer
+    &-info
+      &__company, &__contacts
+        flex-direction: column
+        align-items: flex-start
+    &__slogan
+      margin-top: 10px
+      margin-left: 0
+    &__phone
+      &:last-child
+        margin-top: 5px
+        margin-left: 0
+  .products
+    &-list
+      &__wrap
+        flex-basis: 50%
+        &:nth-child(3)
+          margin-top: 45px
+  .service
+    &__site
+      margin-right: 50px
+@media (max-width: 576px)
+  .footer
+    &-info
+      padding-right: 10px
+      padding-left: 10px
+  .products
+    padding-right: 10px
+    padding-left: 10px
+    &-list
+      &__wrap
+        margin-top: 35px
+      &__title
+        font-size: 11px
+      &__item
+        font-size: 12px
+        letter-spacing: normal
+        line-height: 20px
+  .service
+    &-info
+      padding-right: 10px
+      padding-left: 10px
+      font-size: 12px
+      &-block
+        align-items: center
+    &__site
+      margin-right: 20px
+  .copy
+    display: block

@@ -1,0 +1,95 @@
+.gauge, .callback
+  &-modal
+    position: relative
+    display: none
+  &-close
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 20px
+    right: 20px
+    width: 25px
+    height: 25px
+    background-color: #ff0000
+    color: #ffffff
+    &:hover
+      background-color: lighten(#ff0000, 10%)
+.modal
+  &-block
+    display: none
+    padding: 50px
+    padding-bottom: 30px
+    background-color: $alternate-bg
+  &_active
+    display: block
+  &__background
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 5
+    width: 100%
+    height: 100vh
+    background-color: rgba(0, 0, 0, 0.8)
+    &_active
+      display: flex
+      justify-content: center
+      align-items: center
+.callback, .gauge 
+  &__subtitle
+    margin-top: 16px
+    max-width: 370px
+    line-height: 25p
+  &__form
+    margin-top: 63px
+  &__submit
+    margin: auto
+    margin-top: 20px
+    padding-top: 20px
+    padding-bottom: 17px
+    width: 198px
+    font-size: 14px
+    font-weight: 700
+.thanking
+  &-btn
+    display: block
+    margin: auto
+    margin-top: 60px
+    padding-top: 20px
+    padding-bottom: 17px
+    width: 198px
+    font-size: 14px
+    font-weight: 700
+@media (max-width: 992px)
+  .gauge, .callback
+    &-close
+      &:hover
+        background-color: #ff0000
+  .callback, .gauge
+    &__form
+      margin-top: 40px
+@media (max-width: 576px)
+  .gauge, .callback
+    &-close
+      top: 10px
+      right: 10px
+  .modal
+    &-block
+      padding: 10px
+      padding-top: 40px
+      padding-bottom: 20px
+  .callback, .gauge
+    &__submit
+      margin-top: 15px
+      padding-top: 15px
+      padding-bottom: 15px
+      width: 170px
+      font-size: 12px
+  .thanking
+    &-btn
+      margin-top: 40px
+      padding-top: 15px
+      padding-bottom: 15px
+      width: 170px
+      font-size: 12px

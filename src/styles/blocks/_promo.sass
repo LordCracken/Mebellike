@@ -1,0 +1,114 @@
+.promo
+  position: relative
+  padding-right: 20px
+  padding-left: 20px
+  background-color: $alternate-bg
+  &-block
+    padding-top: 135px
+    padding-right: 45px
+    padding-bottom: 70px
+    width: 46%
+  &__month
+    display: block
+    margin-bottom: 38px
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    color: $title-text
+  &__title
+    margin-bottom: 35px
+    text-align: left
+  &__introduction
+    margin-bottom: 40px
+    max-width: 440px
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+  &__btn
+    display: inline-block
+    padding-top: 20px
+    padding-bottom: 17px
+    width: 217px
+    font-size: 14px
+    font-weight: 700
+    &:hover
+      color: $btn-text
+  &__links
+    display: flex
+    margin-bottom: 132px
+  &__more
+    display: flex
+    align-items: center
+    margin-left: 84px
+    font-size: 14px
+    font-weight: 700
+    color: $text-secondary
+    &:hover
+      color: lighten($text-secondary, 10%)
+.slider-container
+  position: absolute
+  top: 0
+  right: 0
+  width: 54%
+.counter
+  max-width: 50px
+  font-size: 15px
+  font-weight: 400
+  text-transform: uppercase
+  color: $promo-inactive
+  cursor: pointer
+.slick-current.counter
+  font-weight: 700
+  color: $promo-active
+@media (max-width: 1800px)
+  .promo
+    &__links
+      margin-bottom: 100px
+@media (max-width: 1600px)
+  .promo
+    &__links
+      margin-bottom: 20px
+  .slider-container
+    top: auto
+    bottom: 70px
+@media (max-width: 1200px)
+  .promo
+    &-block
+      margin: auto
+      padding-right: 0
+      width: 500px
+    &__title
+      width: 100%
+  .slider-container
+    position: static
+    margin-bottom: 15px
+    width: 100%
+@media (max-width: 992px)
+  .promo
+    padding-right: 15px
+    padding-left: 15px
+    &-block
+      padding-top: 80px
+      padding-bottom: 50px
+    &__more
+      &:hover
+        color: $text-secondary
+@media (max-width: 576px)
+  .promo
+    padding-right: 10px
+    padding-left: 10px
+    &-block
+      padding-top: 60px
+      padding-bottom: 30px
+      width: 100%
+    &__month
+      margin-bottom: 25px
+    &__title
+      margin-bottom: 20px
+    &__introduction
+      margin-bottom: 20px
+      font-size: 13px
+    &__btn
+      width: 167px
+    &__more
+      margin-left: 30px

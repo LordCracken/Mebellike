@@ -1,0 +1,106 @@
+.arrival
+  padding-top: 70px
+  padding-right: 20px
+  padding-bottom: 88px
+  padding-left: 20px
+  &__subtitle
+    margin-bottom: 65px
+  &__items
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 40px
+  &__item
+    position: relative
+    max-width: 592px
+    width: 49.2%
+    cursor: pointer
+    &:hover
+      .arrival
+        &-btn
+          background-color: $major-btn
+          color: $btn-text
+    &:nth-child(odd)
+      margin-right: 18px
+    &:nth-child(1)
+      margin-bottom: 19px
+  &-btn
+    position: absolute
+    bottom: 31px
+    left: 25px
+    display: block
+    padding-top: 18px
+    padding-bottom: 16px
+    width: 207px
+    font-size: 14px
+    font-weight: 700
+    background-color: $arrival-btn
+    &:hover
+      background-color: $major-btn
+      color: $btn-text
+.to-catalog
+  display: block
+  margin: auto
+  padding-top: 19px
+  padding-bottom: 19px
+  width: 217px
+  font-size: 14px
+  font-weight: 700
+  &:hover
+    color: $btn-text
+@media (max-width: 1200px)
+  .arrival
+    &__item
+      width: 49%
+@media (max-width: 992px)
+  .arrival
+    padding-top: 50px
+    padding-right: 15px
+    padding-bottom: 66px
+    padding-left: 15px
+    &__items
+      flex-direction: column
+      align-items: center
+      margin-bottom: 30px
+    &__item
+      margin: 0
+      margin-bottom: 15px
+      width: 100%
+      &:nth-child(1)
+        margin-bottom: 15px
+      &:nth-child(odd)
+        margin-right: 0
+      &:last-child
+        margin-bottom: 0
+    &-btn
+      bottom: 20px
+      left: 15px
+      padding-top: 15px
+      padding-bottom: 13px
+      width: 187px
+      font-size: 12px
+  .to-catalog
+    padding-top: 17px
+    padding-bottom: 17px
+    width: 197px
+    font-size: 12px
+@media (max-width: 576px)
+  .arrival
+    padding-top: 30px
+    padding-right: 10px
+    padding-bottom: 44px
+    padding-left: 10px
+    &__subtitle
+      margin-bottom: 45px
+    &__items
+      margin-bottom: 20px
+    &__item
+      margin-bottom: 10px
+      &:nth-child(1)
+        margin-bottom: 10px
+    &-btn
+      bottom: 15px
+      left: 7px
+      padding-top: 12px
+      padding-bottom: 12px
+      font-size: 10px
+      width: 137px

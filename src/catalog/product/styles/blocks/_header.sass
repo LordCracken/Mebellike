@@ -1,0 +1,128 @@
+.header
+  border-bottom: 1px solid #e2e2e2
+  padding-right: 20px
+  padding-left: 20px
+  background-color: $alternate-bg
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 20px
+    padding-bottom: 12px
+  &__content
+    display: flex
+  &__phone
+    margin-left: 45px
+.search
+  position: relative
+  &__field
+    border: 1px solid $search-text
+    padding: 16px 18px
+    width: 330px
+    max-height: 45px
+    font-size: 14px
+    color: $search-text
+  &-btn
+    position: absolute
+    top: 16px
+    right: 18px
+    border: none
+    padding: 0
+    background: none
+    outline: none
+    cursor: pointer
+    &:hover
+      width: 16px
+    &:active
+      width: 14px
+.cart
+  display: flex
+  align-items: center
+  margin-left: 45px
+  font-size: 14px
+  font-weight: 700
+  color: $text-color
+  &__text
+    margin-left: 13px
+  &:hover
+    .cart
+      &__icon
+        color: $text-secondary
+@media (max-width: 1200px)
+  .search
+    &__field
+      width: 240px
+  .cart, .header__phone
+    margin-left: 20px
+@media (max-width: 992px)
+  .header
+    padding-right: 15px
+    padding-left: 15px
+    &-block
+      align-items: flex-start
+    &__content
+      flex-wrap: wrap
+      margin-top: 4px
+      max-width: 500px
+    &__search
+      margin-top: 10px
+      margin-left: 20px
+      order: 1
+      width: 100%
+  .search
+    &-btn
+      top: 10px
+      &:hover
+        width: 14px
+    &__field
+      padding: 10px 14px
+      width: 100%
+  .cart
+    &:hover
+      color: $text-color
+      .cart
+        &__icon
+          color: $icon-color
+@media (max-width: 768px)
+  .header
+    &-block
+      flex-direction: column
+    &__content
+      justify-content: space-around
+      flex-wrap: wrap
+      margin-top: 15px
+      max-width: 100%
+      width: 100%
+    &__search
+      order: 0
+      margin: 0
+      margin-bottom: 15px
+      width: auto
+      order: 0
+      width: 100%
+    &__cart
+      margin-left: 0
+      margin-right: 20px
+    &__phone
+      margin-left: 0
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
+  .cart, .phone
+    font-size: 12px
+    &__text
+      margin-left: 10px
+@media (max-width: 576px)
+  .header
+    padding-right: 10px
+    padding-left: 10px
+    &-block
+      flex-direction: column
+    &__content
+      justify-content: space-between
+      margin-top: 10px
+      max-width: none
+      width: 100%
+    &__cart
+      margin-bottom: 10px
+      width: 100%

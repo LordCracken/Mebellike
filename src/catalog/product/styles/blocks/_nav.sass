@@ -1,0 +1,146 @@
+.nav
+  padding-right: 20px
+  padding-left: 20px
+  background-color: $alternate-bg
+  &-block
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 12px
+    padding-bottom: 10px
+  &-list
+    flex-basis: 100%
+    display: flex
+    justify-content: space-between
+    padding: 0
+    list-style-type: none
+    max-width: 788px
+    &__item
+      text-transform: uppercase
+      font-size: 13px
+      font-weight: 700
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        top: 24px
+        left: 25%
+        display: block
+        margin: auto
+        width: 50%
+        height: 0
+        background-color: $text-secondary
+      &:hover
+        &::after
+          height: 1px
+  &__list
+    margin-right: 25px
+  &__buttons
+    flex-basis: 100%
+    max-width: 387px
+    display: flex
+    justify-content: space-between
+  &__btn
+    padding-top: 15px
+    padding-bottom: 15px
+    width: 186px
+    font-size: 14px
+    font-weight: 700
+  &__menu
+    margin-right: 30px
+.promotions
+  color: $primary
+.menu-btn
+  display: none
+  background-color: $btn-text
+  height: 35px
+  text-align: left
+  &_active
+    .menu-btn__icon
+      height: 0
+      &::before
+        transform: rotate(45deg)
+      &::after
+        transform: rotate(-45deg)
+  &:hover
+    .menu-btn__icon
+      background-color: $text-secondary
+      &::before, &::after
+        background-color: $text-secondary
+  &__icon
+    margin-top: 50%
+    transform: translateY(-5px)
+    position: relative
+    display: inline-block
+    width: 40px
+    height: 5px
+    background-color: $text-color
+    &::before, &::after
+      content: ''
+      position: absolute
+      width: 40px
+      height: 5px
+      background-color: $text-color
+    &::before
+      transform: translateY(10px)
+    &::after
+      transform: translateY(-10px)
+@media (max-width: 1200px)
+  .nav
+    &-list
+      display: none
+      max-width: none
+      &__item
+        margin-bottom: 10px
+        width: 100%
+        font-size: 15px
+        &:hover
+          &::after
+            height: 0
+        >.link
+          display: inline-block
+          width: 100%
+      &_active
+        position: absolute
+        bottom: -172px
+        display: flex
+        flex-direction: column
+        margin: 0
+        padding: 5px
+        background-color: #ffffff
+        z-index: 2
+        width: 100%
+  .menu-btn
+    display: block
+@media (max-width: 992px)
+  .nav
+    padding-right: 15px
+    padding-left: 15px
+  .menu-btn
+    &:hover
+      .menu-btn__icon
+        background-color: $text-color
+        &::before, &::after
+          background-color: $text-color
+@media (max-width: 768px)
+  .nav
+    &-block
+      padding-top: 7px
+    &__buttons
+      justify-content: flex-end
+      flex-basis: auto
+      max-width: auto
+    &__btn
+      margin-top: 5px
+      padding-top: 10px
+      padding-bottom: 10px
+      width: 150px
+      text-align: center
+      font-size: 12px
+      &:last-child
+        margin-left: 10px
+@media (max-width: 420px)
+  .nav
+    &__btn
+      width: 110px

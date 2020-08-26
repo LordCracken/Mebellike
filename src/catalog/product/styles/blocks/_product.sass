@@ -1,0 +1,281 @@
+.product
+  margin-left: 25px
+  padding-top: 65px
+  flex-basis: 76.4%
+  &-container
+    display: flex
+  &__title
+    margin: 0
+    margin-bottom: 30px
+    font-size: 27.2px
+    font-weight: 700
+    text-transform: uppercase
+  &__hero
+    display: flex
+    margin-bottom: 77px
+  &__img
+    position: relative
+    width: 471px
+  &-nav
+    &__img
+      display: inline-block
+      margin-left: 12px
+      padding-top: 25px
+      padding-right: 20px
+      padding-left: 20px
+      padding-bottom: 33px
+      max-width: 146px
+      height: 144px
+      background-color: #fff
+      outline: none
+      cursor: pointer
+      >img
+        max-width: 109px
+      &:first-child
+        margin-left: 0
+  &__nav
+    width: 100%
+  &-hero
+    &__text
+      margin-left: 33px
+      font-size: 16px
+      font-weight: 400
+      line-height: 25px
+    &__paragraph
+      margin: 0 
+      margin-bottom: 33px
+      border-bottom: 1px solid #d5d5d5
+      padding-bottom: 25px
+  &__slider
+    margin-bottom: 12px
+    overflow: hidden
+  &-price
+    &__text
+      font-size: 15px
+      font-weight: 700
+  &__price
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+.slider
+  &__img
+    display: inline-block
+    padding-top: 74px
+    padding-right: 55px
+    padding-bottom: 82px
+    padding-left: 70px
+    width: 468px
+    height: 428px
+    background-color: #fff
+    outline: none
+  &__arrow
+    font-size: 40px
+    color: #ee8b15
+.rating-bar
+  position: absolute
+  top: 30px
+  right: 21px
+  display: flex
+  justify-content: space-between
+  width: 80px
+  z-index: 2
+.icon-star-full
+  color: #e1e1e1
+.active-star
+  color: #ffdf49
+.prev-arrow, .next-arrow
+  position: absolute
+  top: 195px
+  z-index: 2
+  cursor: pointer
+.prev-arrow
+  left: 5px
+.next-arrow
+  right: 5px
+.left-arrow
+  transform: rotate(-90deg)
+.right-arrow
+  transform: translateX(-15px) rotate(90deg)
+.amount
+  border: 1px solid #e0e0e0
+  width: 60px
+  height: 40px
+  text-align: center
+  &-counter
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+  &__text
+    font-size: 15px
+    font-weight: 700
+  &__btn
+    border: 1px solid #e0e0e0
+    width: 35px
+    height: 40px
+    background-color: rgba(0, 0, 0, 0)
+    text-align: center
+    outline: none
+    cursor: pointer
+.buying
+  &__buttons
+    display: flex
+    justify-content: space-between  
+.price
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 30px
+  &__current
+    color: #7dad4b
+    font-size: 16px
+    font-weight: 700
+  &__old
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.32px
+    text-decoration: line-through
+.buy-btn
+  padding-top: 16px
+  padding-bottom: 16px
+  font-size: 14px
+  font-weight: 700
+  width: 186px
+.cart-btn
+  padding-top: 16px
+  padding-bottom: 16px
+  font-size: 14px
+  font-weight: 700
+  width: 184px
+.lever
+  font-size: 14px
+  font-weight: 700
+  cursor: pointer
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+.product
+  &__stats
+    padding: 23px
+  &__description
+    padding: 55px
+  &__description, &__stats
+    display: inline-block
+    padding-top: 20px
+    padding-bottom: 22px
+.turn-on
+  background-color: #fff
+  color: #7dad4b
+.description, .stats
+  &__text
+    display: none
+    margin: 0
+    margin-bottom: 50px
+    padding: 35px 48px
+    background-color: $alternate-bg
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+.displayed
+  display: block
+@media (max-width: 1240px)
+  .product
+    margin-left: 0
+    padding-right: 20px
+    padding-left: 20px
+    &-container
+      flex-direction: column
+    &__title
+      text-align: center
+  .buying
+    &__buttons
+      display: flex
+      justify-content: flex-start
+  .buy-btn
+    margin-right: 16px
+@media (max-width: 992px)
+  .product
+    &-hero
+      &__text
+        margin-left: 0
+    &__hero
+      flex-direction: column
+      align-items: center
+    &__img
+      margin-bottom: 20px
+@media (max-width: 768px)
+  .product
+    padding-top: 45px
+    &__hero
+      margin-bottom: 50px
+    &__price
+      margin-bottom: 20px
+  .amount-counter
+    margin-bottom: 25px
+@media (max-width: 576px)
+  .product
+    padding-right: 10px
+    padding-left: 10px
+    &__img
+      margin: auto
+      margin-bottom: 15px
+      max-width: 300px
+    &-nav
+      max-width: 300px
+      &__img
+        margin-left: 5px
+        padding-top: 20px
+        padding-right: 15px
+        padding-left: 15px
+        padding-bottom: 25px
+        max-width: 95px
+        height: auto
+        &:first-child
+          margin-left: 0
+    &__slider
+      max-width: 300px
+    &-hero
+      &__paragraph
+        font-size: 14px
+        line-height: 1.4
+    &__description, &__stats
+      padding: 0
+      padding-top: 18px
+      padding-bottom: 20px
+      width: 50%
+      text-align: center
+  .slider
+    &__img
+      padding-top: 54px
+      padding-right: 40px
+      padding-bottom: 62px
+      padding-left: 45px
+      max-width: 300px
+      height: auto
+    &__arrow
+      font-size: 30px
+  .buying
+    &__buttons
+      flex-direction: column
+      align-items: center
+  .buy-btn
+    margin-right: 0
+    margin-bottom: 10px
+  .lever
+    display: flex
+    font-size: 12px
+  .rating-bar
+    top: 15px
+    right: 10px
+  .prev-arrow, .next-arrow
+    top: 145px
+    font-size: 30px
+  .prev-arrow
+    left: 10px
+  .next-arrow
+    right: 10px
+  .right-arrow
+    transform: translateX(-10px) rotate(90deg)
+  .description, .stats
+    &__text
+      padding: 25px 40px
+      font-size: 14px
+      line-height: 1.4

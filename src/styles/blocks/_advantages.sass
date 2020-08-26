@@ -1,0 +1,71 @@
+.advantages
+  &-block
+    padding-top: 82px
+    padding-bottom: 103px
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    margin-top: 67px
+.card
+  display: flex
+  width: 300px
+  height: 250px
+  background-color: $advantage-text
+  &__text
+    margin-top: 85px
+    margin-left: 37px
+  &__img
+    width: 57px
+  &__title
+    margin: 0
+    margin-bottom: 12px
+    font-size: 13px
+    font-weight: 700
+    color: $text-secondary
+    text-transform: uppercase
+  &__description
+    margin: 0
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+.advantage
+  display: flex
+  flex-basis: 50%
+  &__icon
+    align-items: center
+    justify-content: center
+    background-color: $advantage-img
+  &:nth-child(3), &:nth-child(4)
+    flex-direction: row-reverse
+@media (max-width: 1200px)
+  .advantages
+    &__cards
+      flex-direction: column
+      align-items: center
+  .advantage
+    &:nth-child(3), &:nth-child(4)
+      flex-direction: row
+    &:nth-child(even)
+      flex-direction: row-reverse
+@media (max-width: 992px)
+  .advantages
+    &-block
+      padding-top: 60px
+      padding-right: 15px
+      padding-bottom: 20px
+      padding-left: 15px
+@media (max-width: 768px)
+  .advantages
+    &__cards
+      margin-bottom: 57px
+  .advantage
+    flex-direction: column
+    &:nth-child(3), &:nth-child(4), &:nth-child(even)
+      flex-direction: column
+@media (max-width: 576px)
+  .advantages
+    &-block
+      padding-top: 40px 
+      padding-right: 10px
+      padding-bottom: 10px
+      padding-left: 10px

@@ -1,0 +1,176 @@
+.comments
+  background-image: url('../img/comments/comments-bg.jpg')
+  background-size: cover
+  &-block
+    padding-top: 75px
+    padding-bottom: 95px
+  &__container
+    display: flex
+    position: relative
+    margin-top: 65px
+  &__text
+    max-width: 610px
+    font-size: 15px
+    font-weight: 400
+    line-height: 25px
+  &__btn
+    position: absolute
+    left: 133px
+    bottom: 93px
+    display: inline-block
+    padding-top: 21px
+    padding-bottom: 16px
+    width: 217px
+    font-size: 14px
+    font-weight: 700
+    &:hover
+      color: $btn-text
+  &__slider
+    flex-basis: 73.5%
+    overflow: hidden
+  &__select-bar
+    transform: translateX(-3px)
+    flex-basis: 26.5%
+    >.slick-list.draggable
+      height: 100% !important
+      >.slick-track
+        height: 100% !important
+.client
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 8px
+  padding-right: 49px
+  padding-left: 28px
+  padding-bottom: 9px
+  border-top-right-radius: 52px
+  border-bottom-right-radius: 52px
+  height: 100%
+  font-size: 15px
+  color: rgba(0, 0, 0, 0)
+  &-img
+    max-width: 87px
+  &-info
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__name
+    display: block
+    margin-bottom: 6px
+    font-weight: 700
+  &__place
+    display: block
+    font-weight: 400
+  &-wrap
+    max-width: 100% 
+    height: 25% !important // Стили Slick-слайдера пишутся в аттрибут style и перебивают нужные стили
+    cursor: pointer
+    &:first-child
+      transform: translateY(-1px)
+    &:last-child
+      transform: translateY(1px)
+  &-comment
+    padding-top: 105px
+    padding-bottom: 173px
+    padding-left: 133px
+    background-color: $alternate-bg
+.slick-current.client-wrap>.client
+  background-color: $alternate-bg
+  color: $text-color
+.inv-coma
+  position: absolute
+  top: 54px
+  left: 53px
+  z-index: 2
+@media (max-width: 1200px)
+  .comments
+    &__text
+      font-size: 13px
+    &__btn
+      left: 80px
+  .client
+    padding-right: 30px
+    font-size: 13px
+    &-img
+      max-width: 70px
+    &-comment
+      padding-top: 65px
+      padding-right: 80px
+      padding-bottom: 173px
+      padding-left: 20px
+      padding-left: 80px
+  .inv-coma
+    left: 33px
+@media (max-width: 992px)
+  .comments
+    &-block
+      padding-top: 45px
+      padding-bottom: 65px
+    &__btn
+      bottom: 73px
+      left: 20px
+    &__slider
+      flex-basis: 60%
+    &__select-bar
+      flex-basis: 40%
+  .client
+    &-comment
+      padding-right: 40px
+      padding-left: 20px
+  .inv-coma
+    display: none
+@media (max-width: 768px)
+  .comments
+    background-image: none
+    &-block
+      padding-top: 0
+      padding-bottom: 0
+    &__container
+      flex-direction: column
+    &__slider
+      flex-basis: auto
+    &__select-bar
+      flex-basis: auto
+      transform: translateX(0)
+    &__text
+      margin: auto
+    &__btn
+      left: 50%
+      bottom: 173px
+      transform: translateX(-108.5px)
+  .client
+    flex-direction: column
+    padding: 0
+    padding-top: 10px
+    padding-bottom: 30px
+    height: 100%
+    border-top-right-radius: 0
+    border-bottom-right-radius: 52px
+    border-bottom-left-radius: 52px
+    &-wrap
+      max-width: 25%
+      &:first-child
+        transform: translateY(0)
+      &:last-child
+        transform: translateY(0)
+    &-img
+      padding-bottom: 10px
+    &-info
+      align-items: center
+    &-comment
+      display: flex
+      justify-content: center
+      padding-top: 45px
+      padding-right: 15px
+      padding-bottom: 123px
+      padding-left: 15px
+@media (max-width: 576px)
+  .comments
+    &__select-bar
+      max-height: 250px
+      transform: translateY(-1px)
+      overflow: hidden
+    &__btn
+      bottom: 183px
+  .client
+    width: 100%

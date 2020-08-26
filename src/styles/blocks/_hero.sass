@@ -1,0 +1,182 @@
+.hero
+  position: relative
+  background-color: $alternate-bg
+  &-slider
+    position: relative
+  &-nav
+    position: relative
+    padding-left: 348px
+    &__container
+      position: absolute
+      bottom: 50px
+      left: 0
+      padding-right: 20px
+      padding-left: 20px
+      width: 100%
+    &__item
+      margin-left: 7px
+      max-width: 116px
+      max-height: 116px
+      position: relative
+      cursor: pointer
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, rgba(#272727, 0.52) 0%)
+.slider
+  &-text
+    &__container
+      position: absolute
+      bottom: 50px
+      left: 0
+      padding-right: 20px
+      padding-left: 20px
+      width: 100%
+  &-item
+    &__text
+      display: inline-block
+      padding-top: 33px
+      padding-bottom: 33px
+      padding-left: 35px
+      width: 348px
+      background-color: $slider-text-bg
+      color: $slider-text
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-size: 25px
+      font-weight: 700
+      letter-spacing: 0.63px
+    &__category
+      font-size: 14px
+      font-weight: 400
+      letter-spacing: 0.35px
+.slick-current.hero-nav__item
+  &::before
+    background-image: none
+@media (max-width: 1800px)
+  .hero
+    &-nav
+      &__container
+        bottom: 25px
+  .slider
+    &-text
+      &__container
+        bottom: 25px
+@media (max-width: 1550px)
+  .hero
+    &-nav
+      padding-left: 328px
+      &__item
+        max-width: 96px
+        max-height: 96px
+  .slider
+    &-item
+      &__text
+        padding-top: 23px
+        padding-bottom: 23px
+        width: 328px
+@media (max-width: 1350px)
+  .hero
+    &-nav
+      padding-left: 320px
+      &__container
+        bottom: 15px
+  .slider
+    &-item
+      &__text
+        width: 320px
+    &-text
+      &__container
+        bottom: 15px
+@media (max-width: 1200px)
+  .hero
+    &-nav
+      padding-left: 290px
+      &__container
+        bottom: 10px
+      &__item
+        max-width: 70px
+        max-height: 70px
+  .slider
+    &-item
+      &__title
+        margin-bottom: 0
+        font-size: 23px
+      &__category
+        font-size: 12px
+      &__text
+        padding-top: 13px
+        padding-bottom: 13px
+        width: 290px
+    &-text
+      &__container
+        bottom: 10px
+@media (max-width: 992px)
+  .hero
+    &-nav
+      display: inline-block
+      transform: translateX(-2.5px)
+      padding-left: 0
+      &__container
+        display: flex
+        justify-content: center
+        position: static
+        margin-top: 10px
+        padding-right: 15px
+        padding-bottom: 10px
+        padding-left: 15px
+        width: auto
+      &__item
+        margin-left: 5px
+  .slider
+    &-text
+      &__container
+        left: 50%
+        transform: translateX(-120px)
+        padding-right: 0
+        padding-left: 0
+    &-item
+      &__title
+        font-size: 15px
+      &__text
+        width: 240px
+@media (max-width: 768px)
+  .hero
+    &-nav
+      &__container
+        margin-top: -20px
+  .slider
+    &-text
+      &__container
+        left: 0
+        position: static
+        margin-left: 50%
+        transform: translate(-120px, -30px)
+        bottom: 5px
+@media (max-width: 576px)
+  .hero
+    &-nav
+      &__container
+        margin: auto
+        margin-top: 0
+  .slider
+    &-item
+      &__text
+        padding-top: 8px
+        padding-bottom: 8px
+        padding-left: 20px
+        width: 200px
+    &-text
+      &__container
+        transform: translate(-100px, -15px)
+      &__title
+        margin-bottom: 0
+        font-size: 18px
+      &__category
+        font-size: 10px 

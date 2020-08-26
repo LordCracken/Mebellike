@@ -1,0 +1,75 @@
+.site-nav
+  padding-top: 30px
+  padding-bottom: 25px
+  width: 300px
+  font-size: 13px
+  font-weight: 400
+  &__link
+    text-decoration: underline
+.menu
+  width: 280px
+  &__title
+    margin: 0
+    padding-top: 23px
+    padding-bottom: 20px
+    padding-left: 30px
+    background-color: #63564f
+    font-size: 12.5px
+    font-weight: 700
+    text-transform: uppercase
+    color: #ffffff
+  &__list
+    margin: 0
+    padding: 0
+    list-style-type: none
+    background-color: $alternate-bg
+  &__item
+    display: flex
+    align-items: center
+    border-bottom: 1px solid #f2f2f2
+    padding-top: 10px
+    padding-bottom: 12px
+    cursor: pointer
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    &:hover
+      .menu__text
+        color: #ee8b15
+      .icon-ctrl
+        color: #45454f
+    &_active
+      .menu__text
+        color: #ee8b15
+      .icon-ctrl
+        color: #45454f
+  &__icon
+    display: flex
+    align-items: center
+    margin-left: 28px
+    max-width: 30px
+    height: 31px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 28px
+    width: 185px
+    font-size: 14px
+    font-weight: 400
+    color: #939393
+.icon-ctrl
+  color: #d3d3d3
+@media (max-width: 1240px)
+  .menu
+    margin-right: 20px
+    margin-left: 20px
+    width: auto
+    flex-basis: auto
+    &__text
+      padding-right: 20px
+      width: 100%
+@media (max-width: 768px)
+  .menu
+    margin-right: 0
+    margin-left: 0
+  .site-nav
+    margin-left: 10px

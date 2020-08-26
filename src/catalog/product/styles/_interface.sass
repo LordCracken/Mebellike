@@ -1,0 +1,143 @@
+*
+  box-sizing: border-box
+body
+  font-family: Roboto, sans-serif
+  background-color: $site-bg
+.link
+  text-decoration: none
+  color: inherit
+  &:hover
+    color: $text-secondary
+.img-link
+  cursor: pointer
+img
+  width: 100%
+input
+  outline: none
+  &:focus
+    border: 1px solid orange
+.container
+  margin: auto
+  max-width: 1200px
+.btn
+  border: none
+  text-align: center
+  color: $btn-text
+  outline: none
+  cursor: pointer
+.phone
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: 700
+  color: $text-color
+  &__text
+    margin-left: 13px
+  &:hover
+    .icon
+      &-phone
+        color: $text-secondary
+.major
+  background-color: $major-btn
+  &:hover
+    background-color: lighten($major-btn, 10%)
+.primary
+  background-color: $primary
+  &:hover
+    background-color: lighten($primary, 10%)
+.title
+  margin: 0
+  margin-bottom: 10px
+  text-align: center
+  font-size: 32px
+  font-weight: 700
+  text-transform: uppercase
+  color: $title-text
+.subtitle
+  position: relative
+  margin: 0
+  margin-right: auto
+  margin-left: auto
+  text-align: center
+  font-size: 15px
+  font-weight: 400
+  color: $title-text
+  &::after
+    content: ''
+    position: absolute
+    bottom: -25px
+    left: 50%
+    transform: translateX(-23.5px)
+    width: 47px
+    height: 1px
+    background-color: $title-text
+.form
+  display: flex
+  flex-direction: column
+.input
+  border: 1px solid $text-color
+  padding-top: 21px
+  padding-bottom: 21px
+  padding-left: 27px
+  width: 387px
+  font-size: 14px
+  font-weight: 400
+  color: #1f1f1f
+  &-container
+    position: relative
+    margin: auto
+    margin-bottom: 13px
+    &:last-child
+      margin-bottom: 0
+.icon
+  &-ctrl
+    display: inline-block
+    margin-left: 15px
+    font-size: 25px
+    font-weight: 400
+    transform: rotate(90deg) translateY(-7px)
+.phone, .cart
+  &__icon
+    font-size: 16px
+    color: $icon-color
+input.invalid
+  border: 1px solid red
+div.invalid
+  position: absolute
+  top: 60%
+  right: 10px
+  text-align: center
+  font-weight: 700
+@media (max-width: 992px)
+  .major
+    &:hover
+      background-color: $major-btn
+  .primary
+    &:hover
+      background-color: $primary
+  .phone
+    &:hover
+      color: $text-color
+      .phone
+        &__icon
+          color: $icon-color
+@media (max-width: 768px)
+  .logo
+    max-width: 200px
+  div.invalid
+    font-size: 12px
+@media (max-width: 576px)
+  .title
+    margin-bottom: 7px
+    font-size: 25px
+  .subtitle
+    font-size: 13px
+    &::after
+      bottom: -15px
+  .input
+    padding-top: 15px
+    padding-bottom: 15px
+    padding-left: 20px
+    width: 300px
+    &-container
+      margin-bottom: 7px
