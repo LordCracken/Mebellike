@@ -12,7 +12,7 @@
           </button>
         </div>
         <a href="#" class="link cart header__cart">
-          <span class="cart__icon icon-briefcase"></span>
+          <span class="cart__icon icon-cart"></span>
           <span class="cart__text"></span>15 000 рублей</span>
         </a>
         <!-- /.cart -->

@@ -1,17 +1,19 @@
 @font-face {
-  font-family: 'icons';
-  src:
-    url('../fonts/icons.ttf?8gstyu') format('truetype'),
-    url('../fonts/icons.woff?8gstyu') format('woff'),
-    url('../fonts/icons.svg?8gstyu#icons') format('svg');
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ss2bie');
+  src:  url('../fonts/icomoon.eot?ss2bie#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ss2bie') format('truetype'),
+    url('../fonts/icomoon.woff?ss2bie') format('woff'),
+    url('../fonts/icomoon.svg?ss2bie#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
-  speak: none;
+  font-family: 'icomoon' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -23,11 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cart:before {
+  content: "\e93a";
+}
 .icon-phone:before {
   content: "\e942";
-}
-.icon-briefcase:before {
-  content: "\e9ae";
 }
 .icon-star-full:before {
   content: "\e9d9";
