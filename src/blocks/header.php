@@ -16,12 +16,12 @@
           <span class="cart__text"></span>15 000 рублей</span>
         </a>
         <!-- /.cart -->
-        <a href="tel:+7(950)430-25-25" class="link phone header__phone">
+        <a href="tel:+79504302525" class="link phone header__phone">
           <span class="phone__icon icon-phone"></span>
           <span class="phone__text">+7 (950) 430-25-25</span>
         </a>
         <!-- /.phone -->
-        <a href="tel:+7(950)430-25-25" class="link phone header__phone">
+        <a href="tel:+79504302525" class="link phone header__phone">
           <span class="phone__icon icon-phone"></span>
           <span class="phone__text">+7 (999) 350-45-50</span>
         </a>

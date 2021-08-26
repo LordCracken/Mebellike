@@ -12,12 +12,12 @@
         </div>
         <!-- /.footer-info__company -->
         <div class="footer-info__contacts">
-          <a href="tel:+7(950)430-25-25" class="link phone footer__phone">
+          <a href="tel:+79504302525" class="link phone footer__phone">
             <span class="phone__icon icon-phone"></span>
             <span class="phone__text">+7 (950) 430-25-25</span>
           </a>
           <!-- /.phone -->
-          <a href="tel:+7(950)430-25-25" class="link phone footer__phone">
+          <a href="tel:+79504302525" class="link phone footer__phone">
             <span class="phone__icon icon-phone"></span>
             <span class="phone__text">+7 (999) 350-45-50</span>
           </a>
