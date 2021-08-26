@@ -85,8 +85,10 @@ $(document).ready(function () {
       $('.thanking-block').addClass('modal_active');
     }
   });
-  jQuery(function ($) {
-    $(".input-phone").mask("8 (999) 999-99-99", { autoclear: false });
+  var phoneInputs = document.querySelectorAll(".input-phone");
+  phoneInputs.forEach((input) => {
+    IMask(input, {
+      mask: "+{7} (000) 000-00-00",
+    });
   });
-
 });
