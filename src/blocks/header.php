@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-block">
       <div class="logo header__logo">
-        <img src="img/logo.png" alt="Логотип МебельLike">
+        <a href="https://vladislav-yakimovskiy.ru/portfolio/mebelike/"><img src="img/logo.png" alt="Логотип МебельLike"></a>
       </div>
       <div class="header__content">
         <div class="search header__search">
@@ -41,7 +41,7 @@
       </a>
       <ul class="nav-list nav__list">
         <li class="nav-list__item">
-          <a href="http://vladislav-yakimovskiy.ru/graduation-project/catalog/" class="link">Каталог</a>
+          <a href="https://vladislav-yakimovskiy.ru/portfolio/mebelike/catalog/" class="link">Каталог</a>
         </li>
         <!-- /.nav-list__item -->
         <li class="nav-list__item">
@@ -67,10 +67,8 @@
       </ul>
       <!-- /.nav-list nav__list -->
       <div class="nav__buttons">
-        <button class="btn primary nav__btn" id="gauge-btn"
-          onclick="ym(55098775, 'reachGoal', 'gauge-btn'); return true;">Вызвать замерщика</button>
-        <button class="btn major nav__btn" id="callback-btn"
-          onclick="ym(55098775, 'reachGoal', 'callback-btn'); return true;">Обратный звонок</button>
+        <button class="btn primary nav__btn" id="gauge-btn" onclick="ym(55098775, 'reachGoal', 'gauge-btn'); return true;">Вызвать замерщика</button>
+        <button class="btn major nav__btn" id="callback-btn" onclick="ym(55098775, 'reachGoal', 'callback-btn'); return true;">Обратный звонок</button>
       </div>
       <!-- /.nav-buttons -->
     </div>
@@ -233,8 +231,7 @@
       Отправьте заявку на замер и мы вместе расчитаем
       точную стоимость вашей новой мебели или кухни
     </h3>
-    <form action="#" class="form gauge-form gauge__form" id="gauge-modal-form"
-      onsubmit="ym(55098775, 'reachGoal', 'gauge-modal-form'); return true;">
+    <form action="#" class="form gauge-form gauge__form" id="gauge-modal-form" onsubmit="ym(55098775, 'reachGoal', 'gauge-modal-form'); return true;">
       <div class="input-container">
         <input type="text" class="input gauge__input" name="username" placeholder="Как Вас зовут?">
       </div>
@@ -252,8 +249,7 @@
     <h3 class="subtitle">
       Оставьте свои контактные данные и мы позвоним вам в течение минуты
     </h3>
-    <form action="#" class="form callback-form callback__form" id="callback-form"
-      onsubmit="ym(55098775, 'reachGoal', 'callback-form'); return true;">
+    <form action="#" class="form callback-form callback__form" id="callback-form" onsubmit="ym(55098775, 'reachGoal', 'callback-form'); return true;">
       <div class="input-container">
         <input type="text" class="input callback__input" name="username" placeholder="Как Вас зовут?">
       </div>
