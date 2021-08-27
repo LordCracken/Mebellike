@@ -3792,6 +3792,10 @@ body {
   background-color: #f3f3f3;
 }
 
+.opened-modal {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
   color: inherit;

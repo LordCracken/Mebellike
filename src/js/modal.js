@@ -1,24 +1,31 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  var body = $("body");
+  var background = $(".modal__background");
+  var gaugeModal = $(".gauge-modal");
+  var callbackModal = $(".callback-modal");
 
-  $('#gauge-btn').on('click', function() {
-    $('.modal__background').addClass('modal__background_active');
-    $('.gauge-modal').addClass('modal_active');
-  });
-  $('#callback-btn').on('click', function() {
-    $('.modal__background').addClass('modal__background_active');
-    $('.callback-modal').addClass('modal_active');
-  });
-  $('.gauge-close').on('click', function() {
-    $('.modal__background').removeClass('modal__background_active');
-    $('.gauge-modal').removeClass('modal_active');
-  });
-  $('.callback-close').on('click', function() {
-    $('.modal__background').removeClass('modal__background_active');
-    $('.callback-modal').removeClass('modal_active');
-  });
-  $('.thanking-btn').on('click', function() {
-    $('.modal__background').removeClass('modal__background_active');
-    $('.thanking-block').removeClass('modal_active');
-  }); 
+  function openModal(modal) {
+    background.addClass("modal__background_active");
+    modal.addClass("modal_active");
+    body.addClass("opened-modal");
+  }
 
+  function closeModal() {
+    var activeModal = $(".modal_active");
+
+    background.removeClass("modal__background_active");
+    activeModal.removeClass("modal_active");
+    body.removeClass("opened-modal");
+  }
+
+  $("#gauge-btn").on("click", () => openModal(gaugeModal));
+  $("#callback-btn").on("click", () => openModal(callbackModal));
+  $(".gauge-close").on("click", () => closeModal());
+  $(".callback-close").on("click", () => closeModal());
+  $(".thanking-btn").on("click", () => closeModal());
+  background.on("click", (e) => {
+    if (e.target.className.split(" ")[0] === "modal__background") {
+      closeModal();
+    }
+  });
 });
