@@ -229,16 +229,16 @@
 
   <!-- Скрипты -->
   <!-- Библиотеки -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="../../js/jquery-3.4.1.min.js"></script>
+  <script src="../../js/jquery.validate.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="../../js/wow.min.js"></script>
+  <script src="../../js/slick.min.js"></script>
   <!-- Интерфейс -->
   <script src="js/slider.js"></script>
   <script src="js/ui.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/forms.js"></script>
+  <script src="../../js/modal.js"></script>
+  <script src="../../js/forms.js"></script>
 
 </body>
 
